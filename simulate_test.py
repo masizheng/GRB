@@ -40,7 +40,7 @@ for K in detector:
     file_pos.close()
     file_pos=open('result/'+K.split('/')[1]+'/satellites_position.txt','w')
     for i in range(N):
-        file_pos.writelines(str(phi+i*alpha)+'\n')
+        file_pos.writelines(str(i*alpha)+'\n')
     file_pos.close()
     
     for k in range(N):
